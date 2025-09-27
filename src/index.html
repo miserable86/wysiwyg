@@ -1,1 +1,110 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="style.css">
+  <title>Visual-Based Markdown Table Editor | WYSIWYG-To-Markdown</title>
+  <meta name="description" content="Edit Markdown tables through a WYSIWYG (visual) editor for your documentation, blogs or GitHub READMEs.">
+  <meta property="og:title" content="Visual-Based Markdown Table Editor | WYSIWYG-To-Markdown">
+  <meta property="og:description" content="Create Markdown tables through a WYSIWYG (visual) editor for your documentation, blogs or GitHub READMEs.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wysiwyg-riham.pages.dev/">
+  <meta property="og:image" content="https://wysiwyg-riham.pages.dev/images/wysiwyg-opengraph.jpg">
+</head>
+<body>
+  <header class="header">
+    <nav>
+      <div class="flex-align">
+        <button class="hamburger flex-align" aria-expanded="false" aria-controls="table-layout-dropdown">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="3" width="18" height="17" rx="1" stroke="currentColor" stroke-width="1.5" />
+            <rect x="3" y="3" width="18" height="3" fill="currentColor" stroke="none" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="13" x2="21" y2="13" />
+            <line x1="12" y1="3" x2="12" y2="20" />
+          </svg>
+        </button>
+        <div class="divider" style="margin-right: 0.5rem"> </div>
+        <h1><a href="https://wysiwyg-riham.pages.dev/"><span>/riham</span>/wysiwyg</a></h1>
+      </div>
+      <ul>
+        <li><a href="https://wysiwyg-riham.pages.dev/help/">/help</a></li>
+        <li><a href="https://wysiwyg-riham.pages.dev/privacy/">/privacy</a></li>
+      </ul>
+    </nav>
+    <div class="dropdown open" id="table-layout-dropdown">
+      <div class="dropdown-content">
+        <div class="grid"><span class="size">0×0</span></div>
+      </div>
+    </div>
+  </header>
+  <div class="wrapper">
+    <main>
+      <div class="toolbar" role="toolbar">
+        <button class="align-left flex-align">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 5H3" />
+            <path d="M15 12H3" />
+            <path d="M17 19H3" />
+          </svg>
+        </button>
+        <button class="align-center flex-align">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 5H3" />
+            <path d="M17 12H7" />
+            <path d="M19 19H5" />
+          </svg>
+        </button>
+        <button class="align-right flex-align">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 5H3" />
+            <path d="M21 12H9" />
+            <path d="M21 19H7" />
+          </svg>
+        </button>
+      </div>
+      <div class="panel">
+        <div class="preview"> </div>
+        <div class="editor">
+          <textarea></textarea>
+          <button class="copy">Copy</button>
+        </div>
+      </div>
+      <article class="guide">
+        <header>
+          <h2>Getting Started: WYSIWYG To Markdown Tables</h2>
+          <p>Learn about how to use this Markdown tool to create tables with visual reference for your documentation.</p>
+          <span class="meta"><time datetime="2025-09-27">Last Updated 27 September, 2025</time> • By <a href="https://github.com/miserable86/">Riham S.</a></span>
+          <hr aria-hidden="true">
+        </header>
+        <section>
+          <ol>
+            <li>Select the table layout [e.g. 2×3] from the grid selector dropdown under the top header.</li>
+            <li>Click on the rendered preview, the text content can be edited from there.</li>
+            <li>Choose the alignment for a column from the alignment toolbar above the preview.</li>
+            <li>All changes are reflected on the textarea [markdown], copy it from there.</li>
+          </ol>
+          <p>This is a very simplified guide on how to use it, additional information is provided at the <a href="https://wysiwyg-riham.pages.dev/help/">help page</a>.</p>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <p>Copyright 2025, Riham S. GitHub — @miseable86</p>
+      <p>Licensed under <a href="https://wysiwyg-riham.pages.dev/LICENSE.txt">AGPL-3.0 License</a>.</p>
+      <p><a href="https://wysiwyg-riham.pages.dev/privacy/">Privacy Policy</a></p>
+    </footer>
+  </div>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "WYSIWYG To Markdown Table Converter",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Any",
+      "description": "Generate Markdown tables through a visual WYSIWYG editor"
+    }
+  </script>
+  <script src="main.js"> </script>
+</body>
+</html>
