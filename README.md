@@ -4,7 +4,7 @@ The website simplifies the process of creating markdown tables through a WYSIWYG
 
 ![preview](https://wysiwyg-riham.pages.dev/images/wysiwyg-opengraph.jpg)
 
-Try it out at : https://wysiwyg-riham.pages.dev/
+**Try it out at:** https://wysiwyg-riham.pages.dev/
 **Help:** https://wysiwyg-riham.pages.dev/help/
 **Privacy Policy:** https://wysiwyg-riham.pages.dev/privacy/
 
