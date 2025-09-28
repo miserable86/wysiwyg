@@ -1,1 +1,103 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>/riham/wysiwyg - Help | WYSIWYG-To-Markdown Table Editor</title>
+  <meta name="description" content="User Manual Guide for the WYSIWYG-to-Markdown table editor, /riham/wysiwyg.">
+  <meta property="og:title" content="/riham/wysiwyg - Help | WYSIWYG-To-Markdown Table Editor">
+  <meta property="og:description" content="User Manual Guide for the WYSIWYG-to-Markdown table editor, /riham/wysiwyg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wysiwyg-riham.pages.dev/help/">
+  <meta property="og:image" content="https://wysiwyg-riham.pages.dev/images/wysiwyg-opengraph.jpg">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    h3 {
+      font-weight: 425;
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
+    }
+    
+    .guide h2::before {
+      background-image: none;
+      padding: 0;
+    }
+    
+    h2 {
+      margin: 0.5rem 0 !important;
+      font-weight: 435 !important;
+    }
+    
+    nav a svg {
+      color: hsl(0, 0%, 60%);
+      margin-bottom: 0.6rem;
+    }
+    
+    ul {
+      margin: 0.5rem 0;
+      margin-left: 1.5rem;
+    }
+    
+    nav a::after {
+      background-image: none;
+      padding: 0;
+    }
+    
+    li { font-size: 0.95rem }
+    strong { font-weight: 450 }
+    main p { line-height: 1.4 !important }
+  </style>
+  <meta name="google-adsense-account" content="ca-pub-2235239642363008">
+</head> 
+<body>
+  <header class="header">
+    <nav>
+      <div class="flex-align">
+        <button class="hamburger flex-align" disabled>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 5h16" />
+            <path d="M4 12h16" />
+            <path d="M4 19h16" />
+          </svg>
+        </button>
+        <div class="divider" style="margin-right: 0.5rem"> </div>
+        <h1><a href="https://wysiwyg-riham.pages.dev/help/">Help</a></h1>
+      </div>
+      <a href="https://wysiwyg-riham.pages.dev/">Return</a>
+    </nav>
+  </header>
+  <div class="wrapper">
+    <main class="guide">
+      <section>
+        <h2>WYSIWYG-to-Markdown Table Editor</h2>
+        <p>Learn about how the website works and how you can use it.</p>
+        <span class="meta"><time datetime="2025-09-27">Last Updated 27 September, 2025</time> • By <a href="https://github.com/miserable86/">Riham S.</a></span>
+        <hr aria-hidden="true">
+      </section>
+      <section>
+        <h2>Overview</h2>
+        <p>This project is created and maintained by me, you can email me at <a href="mailto:riham.throwaway@yahoo.com">riham.throwaway@yahoo.com</a> for feedback, bug reports and business inquiries.</p>
+        <p>The website simplifies the process of creating markdown tables through a WYSIWYG-like editor without overwhelming.</p>
+      </section>
+      <section>
+        <h3>How it works?</h3>
+        <p>It lets you select a layout for the table at first [e.g. 2×3] from a visual interface [inspired by <a href="https://github.com/ApostropheEditor/Apostrophe">Apostrophe</a>] which will render a barebone HTML table along with its markdown format below.</p>
+        <p>Click on a table row from the rendered preview, it should let you edit the content of it. It's possible to change the layout anytime using the grid selector dropdown as your content is always preserved, as long as you don't remove it from the grid selection range.</p> 
+        <p>It's possible to change the alignment of a column [follows GitHub specification] to left, center and right from the alignment toolbar above the rendered preview, every change to it is immediately reflected on the markdown textarea.</p>
+        <p>Move your cursor to the markdown textarea [it's set as read-only], there will be an option to copy the result to clipboard.</p>
+      </section>
+      <section>
+        <h2>Roadmap</h2>
+        <p>This project is released as a MVP so there are a couple of things that I will include if people start to use it.</p>
+        <p>I built and tested the website on an <strong>iPhone 7 Plus</strong> before production so I had to assume the layout for the desktop. If you notice any consistency in how it scales for desktop, email me.</p>
+        <p>So far, I have planned to include keybinds [mostly by assuming it will work], export to or import from different formats, ability to insert/remove columns or rows outside of the grid selector and localStorage support.</p>
+        <p>If you think there is something I have missed, let me know and I can discuss if it's relevant for the site without over-engineering or hurting the UX.
+      </section>
+    </main>
+    <footer>
+      <p><strong>Last Updated:</strong> <time datetime="2025-09-27">September 27, 2025</time></p>
+      <p><a href="https://wysiwyg-riham.pages.dev/">Back to WYSIWYG-to-Markdown Table Editor</a></p>
+    </footer>
+  </div>
+</body>
+</html>
